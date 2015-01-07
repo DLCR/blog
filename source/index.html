@@ -10,15 +10,15 @@ use:
 <div class="jumbotron">
     <div class="container">
         <h1>D.L.C.R</h1>
-        <p class="lead">All Tales Begin With Stupid Stories.</p>
-        <p> {{ site.title}}</p>
+        <p class="lead"><em>All Tales Begin With Stupid Stories.</em></p>
+        <p><kbd>{{ site.title}}</kbd></p>
     </div>
 </div>
 <div class="container">
 {% for post in page.pagination.items %}
         <div class="row article">
             <div class="col-md-2">
-                <img src="{{ site.defaultHead }}" alt="head" class="img-circle head-img">
+                <img src="{{ site.author[ post.author ] }}" alt="head" class="img-circle head-img">
             </div>
             <div class="col-md-8">
                 <h1>{{ post.title }}</h1>
